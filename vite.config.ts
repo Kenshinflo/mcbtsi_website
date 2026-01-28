@@ -11,7 +11,13 @@ export default defineConfig({
             ssr: 'resources/js/ssr.ts',
             refresh: true,
         }),
-        tailwindcss(),
+        tailwindcss({
+            extend: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans']
+                }
+            },
+        }),
         wayfinder({
             formVariants: true,
         }),

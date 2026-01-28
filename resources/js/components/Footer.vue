@@ -5,13 +5,13 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
                 <!-- Left Section - Let's Talk -->
                 <div class="space-y-8">
-                    <h2 class="text-5xl sm:text-6xl font-black text-black leading-tight">
+                    <h2 class="text-5xl sm:text-8xl font-inter font-bold text-black leading-tight">
                         Let's Talk
                     </h2>
 
                     <!-- Email Section -->
                     <div class="flex items-center gap-4">
-                        <button class="px-6 py-3 bg-gray-800 text-white font-bold text-sm hover:bg-green-500 hover:text-black transition-all duration-300">
+                        <button class="px-6 py-3 bg-black text-white font-bold text-md hover:bg-green-500 hover:text-white transition-all duration-300">
                             Email us
                         </button>
                         <a href="mailto:mcbtsi@gmail.com" class="text-gray-600 font-medium text-sm hover:text-green-500 transition">

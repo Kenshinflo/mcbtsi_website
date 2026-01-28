@@ -4,7 +4,7 @@
         <Header />
 
         <!-- Hero Section -->
-        <section class="py-20 px-4 sm:px-10 bg-white">
+        <section class="py-12 px-4 sm:px-10 bg-white">
             <div class="max-w-7xl mx-auto">
                 <!-- Welcome Content Grid -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-0">
@@ -29,15 +29,15 @@
 
                     <!-- Right Image -->
                     <div class="flex justify-center items-center">
-                        <img :src="image1" alt="Laboratory workers" class="max-w-full h-auto w-full" />
+                        <img :src="medtech" alt="Laboratory workers" class="max-w-full h-auto w-full" />
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Green Divider -->
-        <div class="h-14 bg-green-500">
-            <p class="mx-auto text-center  font-bold text-3xl">
+        <div class="h-14 bg-green-500 flex items-center justify-center">
+            <p class="font-bold text-3xl text-white">
                 Providing Services Beyond Expectations
             </p>
         </div>
@@ -65,9 +65,92 @@
 
                     <!-- Right Image -->
                     <div class="flex justify-center items-center">
-                        <div class="w-full bg-gray-200 h-64 rounded-lg flex items-center justify-center">
-                            <img :src="image1" alt="Company info" class="max-w-full h-auto w-full rounded-lg" />
+                        <div class=" bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                            <img :src="image1" alt="Company info" class="max-w-md rounded-lg" />
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Section -->
+        <section class="py-20 px-4 sm:px-10 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-black text-black mb-4">
+                        Our Focus Areas
+                    </h2>
+                    <p class="text-gray-600 text-sm max-w-2xl mx-auto">
+                        We excel in multiple areas of laboratory enhancement and innovation
+                    </p>
+                </div>
+
+                <!-- Bento Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Item 1 - Large -->
+                    <div class="md:col-span-2 bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">Laboratory Information System</h3>
+                        <p class="text-gray-600 text-sm">Advanced LIS solutions to streamline laboratory operations and enhance data management.</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-black mb-2">Equipment</h3>
+                        <p class="text-gray-600 text-sm">State-of-the-art laboratory machinery and equipment.</p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-black mb-2">Support</h3>
+                        <p class="text-gray-600 text-sm">24/7 technical support for all our solutions.</p>
+                    </div>
+
+                    <!-- Item 4 - Large -->
+                    <div class="md:col-span-2 bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-orange-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-black mb-2">Consulting & Implementation</h3>
+                        <p class="text-gray-600 text-sm">Expert consulting services to help implement and optimize our solutions for your laboratory needs.</p>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-black mb-2">Training</h3>
+                        <p class="text-gray-600 text-sm">Comprehensive training programs for your team.</p>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-indigo-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-black mb-2">Innovation</h3>
+                        <p class="text-gray-600 text-sm">Continuous innovation in laboratory solutions.</p>
                     </div>
                 </div>
             </div>
@@ -84,6 +167,7 @@
 <script setup lang="ts">
 import logoImage from '/resources/images/logo.png'
 import image1 from '/resources/images/image1.png'
+import medtech from '/resources/images/medtech.png'
 import { Link } from '@inertiajs/vue3'
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';

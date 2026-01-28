@@ -9,10 +9,10 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex gap-10 items-center">
-                <Link href="/" class="text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/" class="text-gray-800 font-medium font-inter text-sm hover:text-green-500 transition">
                     Home
                 </Link>
-                <Link href="/service" class="text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/service" class="text-gray-800 font-medium font-inter text-sm hover:text-green-500 transition">
                     Services
                 </Link>
                 <Link href="/careers" class="text-gray-800 font-medium text-sm hover:text-green-500 transition">
@@ -43,16 +43,16 @@
             class="md:hidden bg-white border-t border-gray-200"
         >
             <div class="px-4 sm:px-10 py-4 space-y-4">
-                <Link href="/" class="block text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/" class="block text-gray-800  text-sm hover:text-green-500 transition">
                     Home
                 </Link>
-                <Link href="/service" class="block text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/service" class="block text-gray-800  text-sm hover:text-green-500 transition">
                     Services
                 </Link>
-                <Link href="/careers" class="block text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/careers" class="block text-gray-800 text-sm hover:text-green-500 transition">
                     Careers
                 </Link>
-                <Link href="/about" class="block text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/about" class="block text-gray-800 text-sm hover:text-green-500 transition">
                     About
                 </Link>
             </div>

@@ -17,4 +17,8 @@ Route::get('dashboard', function () {
 Route::get('/about', function () {
     return Inertia::render('About');
 })->name('About');
+
+Route::get('/careers', function () {
+    return Inertia::render('Career');
+})->name('Career');
 require __DIR__.'/settings.php';

@@ -1,42 +1,42 @@
 <template>
-    <div class="min-h-screen bg-white">
+    <div class="min-h-screen bg-white overflow-x-hidden">
         <Header />
 
         <!-- Hero Section -->
         <section class="py-20 px-4 sm:px-10 bg-gradient-to-br from-gray-50 to-gray-100">
             <div class="max-w-7xl mx-auto">
                 <!-- Content Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-11 items-center mb-20">
                     <!-- Left Content -->
-                    <div class="space-y-8">
+                    <div class="">
                         <div>
-                            <h1 class="text-5xl sm:text-6xl font-extrabold text-black leading-tight -tracking-wide">
+                            <h1 class="text-5xl text-wrap md:text-nowrap sm:text-6xl font-inter font-bold text-black leading-10 -tracking-wide">
                                 Optimizing Laboratories
                             </h1>
-                            <h2 class="text-4xl sm:text-5xl font-bold  text-green-500 leading-tight mt-2">
+                            <h2 class="text-4xl sm:text-6xl font-inter font-extrabold text-green-500 leading-tight mt-2">
                                 It Starts Here!
                             </h2>
                         </div>
 
-                        <p class="text-gray-600 text-base leading-relaxed max-w-sm">
-                            Empowering laboratories with cutting-edge technology for better patient care
+                        <p class="text-gray-600 text-base text-balance leading-tight max-w-md">
+                            Empowering laboratories for better patient care, for better future.
                         </p>
 
-                        <button class="px-8 py-4 bg-black text-white font-semibold text-sm uppercase tracking-wider hover:bg-green-500 hover:text-black transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
+                        <button class="px-7 py-4 mt-5 cursor-pointer bg-black text-white  font-bold text-md  tracking-wide hover:bg-green-500  transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
                             Explore our Solutions
                         </button>
                     </div>
 
                     <!-- Right Image -->
                     <div class="flex justify-center items-center translate-y-0 opacity-100 transition-all duration-750 dark:text-[#F61500] starting:translate-y-36 starting:opacity-0">
-                        <img :src="image1" alt="Laboratory workers" class="max-w-full h-auto w-full max-w-md" />
+                        <img :src="image1" alt="Laboratory workers" class="max-w-md h-auto w-full" />
                     </div>
                 </div>
 
                 <!-- Video Cards Section -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <!-- Video Card 1 -->
-                    <div class="group relative bg-gradient-to-br from-gray-300 to-gray-200 rounded-xl overflow-hidden aspect-video flex items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300">
+                    <div class="group relative bg-linear-to-br from-gray-300 to-gray-200 rounded-xl overflow-hidden aspect-video flex items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300">
                         <svg class="w-20 h-20 text-black opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M8 5v14l11-7z" />
                         </svg>
@@ -104,7 +104,7 @@
         </section>
 
         <!-- 24/7 Support Section -->
-        <section class="py-20 px-4 sm:px-10 bg-white">
+        <section class="pb-20 px-4 sm:px-10 bg-white">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <!-- Left Content -->
@@ -192,18 +192,26 @@
 
                 <!-- Testimonial Card -->
                 <div class="bg-gray-800 rounded-2xl p-8 text-center space-y-4 relative">
-                    <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-green-500 transition">
+                    <button @click="previousTestimonial" class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-green-500 transition">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
 
-                    <p class="text-gray-300 text-sm leading-relaxed max-w-2xl mx-auto">
-                        MC Biotechnical Solutions Inc. has revolutionized the way laboratories operate. Their innovative solutions have made our work faster and more efficient
-                    </p>
-                    <p class="text-white font-semibold text-sm">- Jerome Ibardollasa, RMT</p>
+                    <Transition
+                        enterActiveClass="animate-swipeIn"
+                        leaveActiveClass="animate-swipeOut"
+                        mode="out-in"
+                    >
+                        <div :key="currentIndex" class="space-y-4 transition-all duration-500 h-36">
+                            <p class="text-gray-300 text-xl leading-relaxed max-w-2xl mx-auto">
+                                {{ currentTestimonial.text }}
+                            </p>
+                            <p class="text-white font-semibold text-md">- {{ currentTestimonial.author }}, {{ currentTestimonial.title }}</p>
+                        </div>
+                    </Transition>
 
-                    <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-green-500 transition">
+                    <button @click="nextTestimonial" class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-green-500 transition">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
                         </svg>
@@ -217,80 +225,83 @@
             <div class="max-w-7xl mx-auto">
                 <!-- About Us Header -->
                 <div class="text-center mb-16">
-                    <p class="text-blue-500 font-semibold text-sm mb-4">About us</p>
-                    <div class="flex justify-center mb-8">
+                    <div class="inline-block bg-white rounded-full shadow-md px-4 py-2 mb-6">
+                        <p class="text-blue-500 font-semibold text-sm">About us</p>
+                    </div>
+                    <div class="flex justify-center mb-6">
                         <img :src="logoImage" alt="MC BioTechnical Solutions" class="h-20 w-auto" />
                     </div>
                 </div>
 
                 <!-- Content Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
-                    <!-- Video Player -->
-                    <div class="flex justify-center items-center">
-                        <div class="w-full bg-gray-300 rounded-3xl aspect-video flex items-center justify-center cursor-pointer hover:bg-gray-400 transition group">
-                            <svg class="w-24 h-24 text-white opacity-60 group-hover:opacity-100 transition" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
+                <div class="bg-white rounded-3xl shadow-lg p-8 lg:p-12 mb-16">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+                        <!-- Video Player -->
+                        <div class="flex justify-center items-center">
+                            <video class="w-full bg-gray-300 rounded-3xl aspect-video object-cover" controls>
+                                <source :src="mcbtsi_vid" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
-                    </div>
 
-                    <!-- Description -->
-                    <div class="space-y-6">
-                        <p class="text-gray-700 text-sm leading-relaxed">
-                            <strong class="text-green-500">MC Biotechnical Solutions Inc.</strong>, or <strong class="text-green-500">MCBTSi</strong> as we call ourselves, is part of a group of companies called <strong>Zafire Group of Companies</strong>. We at MCBTSi focus on Laboratory enhancement with our machines and laboratory information system (LIS).
-                        </p>
+                        <!-- Description -->
+                        <div class="space-y-6">
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                <strong class="text-green-500">MC Biotechnical Solutions Inc.</strong>, or <strong class="text-green-500">MCBTSi</strong> as we call ourselves, is part of a group of companies called <strong>Zafire Group of Companies</strong>. We at MCBTSi focus on Laboratory enhancement with our machines and laboratory information system (LIS).
+                            </p>
+                        </div>
+                        
                     </div>
+                    <div class="mb-16 overflow-x-auto pb-4">
+                            <div class="flex gap-6 min-w-max">
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                                
+                                <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
+                            </div>
+                        </div>
                 </div>
 
                 <!-- Gallery/Products Carousel -->
-                <div class="mb-16 overflow-x-auto pb-4">
-                    <div class="flex gap-6 min-w-max">
-                        <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
-                        <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
-                        <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
-                        <div class="w-48 h-32 bg-gray-300 rounded-2xl flex-shrink-0 hover:shadow-lg transition"></div>
-                    </div>
-                </div>
+                
 
                 <!-- Career Section -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <!-- Interested Card -->
-                    <div class="bg-gradient-to-br from-purple-700 to-purple-900 rounded-3xl p-8 text-white space-y-4">
-                        <h3 class="text-3xl font-bold">
-                            Interested to be part of our team?
-                        </h3>
+                <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+                    <!-- Top Colored Cards Grid -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2">
+                        <!-- Interested Card -->
+                        <div class="bg-gradient-to-br from-purple-700 to-purple-900 p-8 text-white">
+                            <h3 class="text-2xl sm:text-3xl font-bold">
+                                Interested to be part of our team?
+                            </h3>
+                        </div>
+
+                        <!-- Growing Family Card -->
+                        <div class="bg-gradient-to-br from-green-400 to-green-600 p-8 text-white">
+                            <h3 class="text-2xl sm:text-3xl font-bold">
+                                Come. Be part of our growing family →
+                            </h3>
+                        </div>
                     </div>
 
-                    <!-- Growing Family Card -->
-                    <div class="bg-gradient-to-br from-green-400 to-green-600 rounded-3xl p-8 text-white space-y-4">
-                        <h3 class="text-3xl font-bold">
-                            Come. Be part of our growing family :-&gt;
-                        </h3>
-                    </div>
-                </div>
-
-                <!-- Careers Info Section -->
-                <div class="mt-12 bg-white rounded-3xl p-8 relative">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <!-- Careers Info Section -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-8">
                         <!-- Careers Content -->
                         <div class="space-y-4">
-                            <div class="flex items-start gap-3">
-                                <div class="w-4 h-4 bg-green-500 rounded-full mt-1 flex-shrink-0"></div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-black">Careers</h3>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm leading-relaxed">
+                            <h3 class="text-2xl sm:text-3xl font-black text-black">Careers</h3>
+                            <p class="text-gray-700 text-sm leading-relaxed">
                                 MC Biotechnical Solutions Inc. is dedicated to making laboratories easier and faster by providing innovative solutions and services tailored to meet the needs of modern scientific research.
                             </p>
                         </div>
 
                         <!-- View Careers Button -->
-                        <div class="flex justify-end items-start">
-                            <button class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white hover:bg-green-500 transition-all duration-300">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                </svg>
+                        <div class="flex justify-start lg:justify-end">
+                            <button class="w-14 h-14 bg-black rounded-full flex items-center justify-center text-white hover:bg-green-500 transition-all duration-300 cursor-pointer">
+                                
+                                <p class="font-inter text-2xl">-></p>
                             </button>
                         </div>
                     </div>
@@ -307,14 +318,106 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
 import logoImage from '/resources/images/logo.png'
 import image1 from '/resources/images/image1.png'
+import mcbtsi_vid from '/resources/images/mcbtsi_vid.mp4'
 import { Link } from '@inertiajs/vue3'
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
-// If you have a lab-illustration image, import it here:
-// import labImage from '@/resources/images/lab-illustration.svg'
 
-// For now, using placeholder path - replace with actual image when available
+interface Testimonial {
+  text: string
+  author: string
+  title: string
+}
 
+const testimonials = ref<Testimonial[]>([
+  {
+    text: "MC Biotechnical Solutions Inc. has revolutionized the way laboratories operate. Their innovative solutions have made our work faster and more efficient.",
+    author: "Jerome Ibardollasa",
+    title: "RMT"
+  },
+  {
+    text: "The HCLAB LIS system has streamlined our entire laboratory workflow. Implementation was smooth and the support team is exceptional.",
+    author: "Dr. Maria Santos",
+    title: "Lab Director"
+  },
+  {
+    text: "Outstanding customer service and reliable equipment. MCBTSi has been a game-changer for our clinical laboratory.",
+    author: "Antonio Cruz",
+    title: "Hospital Administrator"
+  },
+  {
+    text: "Their 24/7 technical support has saved us countless times. The team truly understands laboratory operations and challenges.",
+    author: "Dr. Jennifer Lee",
+    title: "Chief Technologist"
+  }
+])
+
+const currentIndex = ref(0)
+const currentTestimonial = ref(testimonials.value[0])
+let autoAdvanceInterval: ReturnType<typeof setInterval> | null = null
+
+const nextTestimonial = () => {
+  currentIndex.value = (currentIndex.value + 1) % testimonials.value.length
+  currentTestimonial.value = testimonials.value[currentIndex.value]
+}
+
+const previousTestimonial = () => {
+  currentIndex.value = (currentIndex.value - 1 + testimonials.value.length) % testimonials.value.length
+  currentTestimonial.value = testimonials.value[currentIndex.value]
+}
+
+const startAutoAdvance = () => {
+  autoAdvanceInterval = setInterval(() => {
+    nextTestimonial()
+  }, 10000) // Change testimonial every 5 seconds
+}
+
+const stopAutoAdvance = () => {
+  if (autoAdvanceInterval) {
+    clearInterval(autoAdvanceInterval)
+  }
+}
+
+onMounted(() => {
+  startAutoAdvance()
+})
+
+onUnmounted(() => {
+  stopAutoAdvance()
+})
 </script>
+
+<style scoped>
+@keyframes swipeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes swipeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-swipeIn {
+  animation: swipeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+.animate-swipeOut {
+  animation: swipeOut 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+</style>
