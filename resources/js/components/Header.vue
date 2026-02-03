@@ -9,16 +9,16 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex gap-10 items-center">
-                <Link href="/" class="text-gray-800 font-medium font-inter text-sm hover:text-green-500 transition">
+                <Link href="/" class="text-gray-800 font-medium font-rale text-md hover:text-green-500 transition">
                     Home
                 </Link>
-                <Link href="/service" class="text-gray-800 font-medium font-inter text-sm hover:text-green-500 transition">
+                <Link href="/service" class="text-gray-800 font-medium font-rale text-md hover:text-green-500 transition">
                     Services
                 </Link>
-                <Link href="/careers" class="text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/careers" class="text-gray-800 font-medium font-rale text-md hover:text-green-500 transition">
                     Careers
                 </Link>
-                <Link href="/about" class="text-gray-800 font-medium text-sm hover:text-green-500 transition">
+                <Link href="/about" class="text-gray-800 font-medium font-rale text-md hover:text-green-500 transition">
                     About
                 </Link>
             </div>
@@ -61,8 +61,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 import { Link } from '@inertiajs/vue3'
+import { ref } from 'vue'
+
 import logoImage from '/resources/images/logo.png'
 
 

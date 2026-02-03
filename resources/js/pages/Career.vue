@@ -8,12 +8,12 @@
             <div class="flex h-96">
                 <!-- Left Content -->
                 <div class="w-full lg:w-1/2 px-4 sm:px-10 flex items-center justify-start">
-                    <div class="space-y-4 max-w-md">
+                    <div class="max-w-md">
                         <div class="px-12">
-                            <h1 class="text-4xl sm:text-5xl font-black text-black leading-tight">
+                            <h1 class="text-4xl text-right sm:text-4xl font-inter font-extrabold  text-black leading-tight">
                                 Join us in
                             </h1>
-                            <p class="text-4xl sm:text-5xl font-black text-green-500 leading-tight mt-2">
+                            <p class="text-4xl sm:text-6xl font-inter font-bold text-green-500 leading-tight">
                                 MCBTSi!
                             </p>
                         </div>
@@ -60,7 +60,7 @@
                         <p class="text-gray-700 text-sm leading-relaxed">
                             Responsible for connecting laboratory instruments to the Laboratory Information System (LIS), ensuring seamless data flow and operational efficiency.
                         </p>
-                        <button class="px-6 py-2 bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-black transition-all duration-300">
+                        <button class="px-6 py-2 cursor-pointer bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-blac transition-all duration-300">
                             Apply now
                         </button>
                     </div>
@@ -74,7 +74,7 @@
                         <p class="text-gray-700 text-sm leading-relaxed">
                             Provides on-site technical support, maintenance, and troubleshooting for laboratory instruments and equipment, ensuring optimal performance.
                         </p>
-                        <button class="px-6 py-2 bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-black transition-all duration-300">
+                        <button class="px-6 py-2 cursor-pointer bg-black text-white font-semibold text-sm hover:bg-green-500 transition-all duration-300">
                             Apply now
                         </button>
                     </div>
@@ -88,7 +88,7 @@
                         <p class="text-gray-700 text-sm leading-relaxed">
                             Acts as a communication bridge between clients, engineers, and IT teams by managing service reports and ensuring timely resolution.
                         </p>
-                        <button class="px-6 py-2 bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-black transition-all duration-300">
+                        <button class="px-6 py-2 cursor-pointer bg-black text-white font-semibold text-sm hover:bg-green-500  transition-all duration-300">
                             Apply now
                         </button>
                     </div>
@@ -102,11 +102,11 @@
 </template>
 
 <script setup lang="ts">
-import logoImage from '/resources/images/logo.png'
+
 import medtech from '/resources/images/medtech.png'
-import { Link } from '@inertiajs/vue3'
-import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+import Header from '@/components/Header.vue';
+
 // If you have a lab-illustration image, import it here:
 // import labImage from '@/resources/images/lab-illustration.svg'
 

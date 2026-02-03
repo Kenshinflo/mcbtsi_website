@@ -3,61 +3,79 @@
         <!-- Navigation -->
         <Header />
 
-        <div class="h-1 bg-blue-500 flex items-center justify-center">
-            <p class="font-bold text-3xl text-white">
-                
-            </p>
-        </div>
         <!-- Hero Section -->
         <section class="py-12 px-4 sm:px-10 bg-white">
-            <div class="max-w-7xl mx-auto">
+            <div class="flex h-96">
                 <!-- Welcome Content Grid -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-0">
-                    <!-- Left Content -->
+                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-0">
+                  
                     <div class="space-y-6">
                         <div>
-                            <h1 class=" text-3xl sm:text-3xl font-medium font-zalando text-black -tracking-wide">
-                                Welcome to
-                            </h1>
-                            <p class="text-4xl sm:text-6xl font-black font-zalando text-green-500 leading-14">
-                                MC Biotechnical
-                                Solutions Inc.
+                            <p class="text-4xl sm:text-6xl font-inter font-bold text-black leading-relaxed tracking-tight">
+                                Smart Services. 
+                            </p>
+                            <p class="text-4xl sm:text-6xl font-inter font-semibold text-green-500 leading-relaxed -mt-9 tracking-tight">
+                                Seamless Results.
                             </p>
                         </div>
 
                         <p class="text-gray-600 text-sm leading-relaxed">
-                            <!-- Lorem Ipsum -->
+                            At MC Biotechnical, we deliver smart solutions backed by a team that goes beyond expectations. 
+                            From field engineers and IT specialists to our dedicated office staff, 
+                            we ensure seamless operations and responsive service. With 24-hour support, we keep your workforce uninterrupted—because your uptime
+                             is our priority, and your trust is our commitment.
                         </p>
                     </div>
 
-                    <!-- Right Image -->
+                    
                     <div class="flex justify-center items-center">
                         <img :src="medtech" alt="Laboratory workers" class="max-w-full h-auto w-full" />
                     </div>
+                </div> -->
+                <div class="w-full lg:w-1/2 px-4 sm:pl-10 flex items-center justify-start">
+                    <div class="max-w-lg">
+                        <div class="pl-12">
+                            <h1 class="text-4xl sm:text-5xl font-zalando font-extrabold  text-black leading-tight">
+                                Smart Services
+                            </h1>
+                            <p class="text-4xl sm:text-5xl font-zalando font-bold text-green-500 leading-tight">
+                                Seamless Results.
+                            </p>
+                        </div>
+
+                        <p class="text-gray-700 text-sm leading-relaxed px-12">
+                            You can be part of our growing family
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Image - Full Height, No Margins -->
+                <div class="hidden lg:flex w-1/2">
+                    <img :src="medtech" alt="Laboratory scientist" class="w-full h-full object-cover" />
                 </div>
             </div>
         </section>
 
         <!-- Green Divider -->
-        <div class="h-14 bg-green-500 flex items-center justify-center">
+        <!-- <div class="h-14 bg-green-500 flex items-center justify-center">
             <p class="font-bold text-3xl text-white">
                 Providing Services Beyond Expectations
             </p>
-        </div>
+        </div> -->
 
         <!-- What About Us Section -->
-        <section class="py-20 px-4 sm:px-10 bg-white">
+        <section class="py-20 px-4 sm:px-10 bg-black/90">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
                     <!-- Left Content with Green Border -->
                     <div class="border-l-8 border-green-500 pl-8 space-y-6">
-                        <h2 class="text-4xl sm:text-5xl font-black text-black">
-                            What About Us?
+                        <h2 class="text-4xl sm:text-5xl font-black text-white">
+                            What We Do?
                         </h2>
 
-                        <div class="space-y-4 text-gray-700 text-sm leading-relaxed">
+                        <div class="space-y-4 text-white text-sm leading-relaxed">
                             <p>
-                                <strong>MC Biotechnical Solutions</strong>, or most commonly known as <strong>MCBTSi</strong> is a dynamic engineering company founded on March 22, 2022, emerging from a dedicated team of four individuals at Zafire Distributors Inc. during its NCR operation in 2003.
+                                <strong>HCLAB Smart Client</strong>, or most commonly known as <strong>MCBTSi</strong> is a dynamic engineering company founded on March 22, 2022, emerging from a dedicated team of four individuals at Zafire Distributors Inc. during its NCR operation in 2003.
                             </p>
 
                             <p>
@@ -159,7 +177,70 @@
             </div>
         </section>
             
-            
+        <div class="h-14 bg-blend-color flex items-center justify-center mb-10">
+            <p class="font-bold font-rale text-5xl text-black">
+                Here's what we offer:
+            </p>
+        </div>
+        <!-- HCLAB Section -->
+        <section class="py-20 px-4 sm:px-10 bg-black/90">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                    <!-- Left Content with Green Border -->
+                    <div class="border-l-8 border-green-500 pl-8 space-y-6">
+                        <h2 class="text-4xl sm:text-5xl font-zalando font-extrabold text-white shadow-2xs shadow-amber-400">
+                            HCLAB
+                        </h2>
+
+                        <div class="space-y-4 text-white text-sm leading-relaxed">
+                            <p>
+                                <strong>HCLAB Smart Client</strong>, is a Laboratory Information System (LIS) developed by Sysmex, designed to streamline diagnostic workflows across multiple disciplines such as haematology, biochemistry, immunology, microbiology, and pathology. It is highly scalable, supporting laboratories from small clinics to large multi-site hospitals, and manages the entire process from test requests to results reporting.
+                            </p>
+                            <p>
+                                Key features include sample tracking, quality control management, instrument interfacing, and robust reporting capabilities. HCLAB enhances laboratory efficiency, reduces errors, and improves patient care by providing real-time data access and integration with other healthcare systems.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="flex justify-center items-center">
+                        <div class=" bg-gray-200 h-64 rounded-lg flex items-center justify-center">
+                            <img :src="image1" alt="Company info" class="max-w-md rounded-lg" />
+                        </div>
+                    </div>
+
+                    <div class="bg-black/30 rounded-2xl p-6 shadow-md border-2 border-gray-600 hover:shadow-lg hover:scale-105 duration-300 transition-all cursor-pointer">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">WAM</h3>
+                        <p class="text-gray-100 text-sm">Workload Management System.</p>
+                    </div>
+
+                    <div class="bg-black/30 rounded-2xl p-6 shadow-md border-2 border-gray-600 hover:shadow-lg hover:scale-105 duration-300 transition-all cursor-pointer">
+                        <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center mb-3">
+                            <svg class="w-5 h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">LIS</h3>
+                        <p class="text-gray-100 text-sm">Laboratory Information System.</p>
+                    </div>
+
+                    <div class="md:col-span-2 bg-black/30 rounded-2xl border-2 border-gray-600 p-8 shadow-md hover:shadow-lg transition-all hover:scale-105 duration-300 cursor-pointer">
+                        <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10.5 1.5H2.25A.75.75 0 001.5 2.25v15.5c0 .414.336.75.75.75h15.5a.75.75 0 00.75-.75V10"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Special Modules</h3>
+                        <p class="text-gray-100 text-sm">Microbiology, Blood Bank, Anatomical Pathology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     <Footer />

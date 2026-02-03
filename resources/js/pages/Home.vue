@@ -10,21 +10,21 @@
                     <!-- Left Content -->
                     <div class="">
                         <div>
-                            <h1 class="text-5xl text-wrap md:text-nowrap sm:text-6xl font-inter font-bold text-black leading-10 -tracking-wide">
+                            <h1 class="text-5xl text-wrap md:text-nowrap sm:text-6xl font-rale font-extrabold text-black/80 leading-10 tracking-tight">
                                 Optimizing Laboratories
                             </h1>
-                            <h2 class="text-4xl sm:text-6xl font-inter font-extrabold text-green-500 leading-tight mt-2">
+                            <h2 class="text-4xl sm:text-5xl font-extrabold text-green-500 font-zalando leading-tight -tracking-wide mt-2">
                                 It Starts Here!
                             </h2>
                         </div>
 
-                        <p class="text-gray-600 text-base text-balance leading-tight max-w-md">
+                        <p class="text-gray-600 text-lg text-balance  leading-tight mt-3 mb-10 max-w-md">
                             Empowering laboratories for better patient care, for better future.
                         </p>
 
-                        <button class="px-7 py-4 mt-5 cursor-pointer bg-black text-white  font-bold text-md  tracking-wide hover:bg-green-500  transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
+                        <Link href="/service" class="px-7 py-4 mt-14 bg-black text-white font-rale  font-bold text-md tracking-wide hover:bg-green-500  transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
                             Explore our Solutions
-                        </button>
+                        </Link>
                     </div>
 
                     <!-- Right Image -->
@@ -65,7 +65,7 @@
                     <div class="order-1 lg:order-2 space-y-8">
                         <div>
                             <p class="text-blue-500 font-semibold text-sm mb-2">Our Services</p>
-                            <h2 class="text-4xl sm:text-5xl font-black text-black leading-tight">
+                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black leading-tight tracking-tight">
                                 We help laboratories enhance accuracy and productivity.
                             </h2>
                             <p class="text-gray-600 text-sm mt-4">
@@ -110,7 +110,7 @@
                     <!-- Left Content -->
                     <div class="space-y-12">
                         <div>
-                            <h2 class="text-4xl sm:text-5xl font-black text-black leading-tight mb-4">
+                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black leading-tight mb-4">
                                 We offer 24/7 Technical Support
                             </h2>
                             <p class="text-gray-600 text-sm leading-relaxed">
@@ -161,10 +161,10 @@
             <div class="max-w-7xl mx-auto space-y-12">
                 <!-- Header -->
                 <div class="text-white">
-                    <h2 class="text-4xl sm:text-5xl font-black mb-2">
+                    <h2 class="text-3xl sm:text-4xl font-zalando font-semibold mb-2">
                         Providing service toward success →
                     </h2>
-                    <p class="text-blue-100 text-sm max-w-2xl">
+                    <p class="text-blue-100 text-md max-w-2xl">
                         We believe that real is the essence in health services, so we try to improve that
                     </p>
                 </div>
@@ -318,13 +318,14 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { Link } from '@inertiajs/vue3'
+import { ref, onMounted, onUnmounted} from 'vue'
+import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
 import logoImage from '/resources/images/logo.png'
 import image1 from '/resources/images/image1.png'
 import mcbtsi_vid from '/resources/images/mcbtsi_vid.mp4'
-import { Link } from '@inertiajs/vue3'
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
+
 
 interface Testimonial {
   text: string

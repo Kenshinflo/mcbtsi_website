@@ -21,4 +21,9 @@ Route::get('/about', function () {
 Route::get('/careers', function () {
     return Inertia::render('Career');
 })->name('Career');
+
+Route::get('/service', function () {
+    return Inertia::render('Service');
+})->name('Service');
+
 require __DIR__.'/settings.php';
