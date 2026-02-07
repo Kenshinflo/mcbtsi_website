@@ -5,9 +5,9 @@
 
         <!-- Hero Section -->
         <section class="py-12 px-4 sm:px-10 bg-white">
-            <div class="flex h-96">
+            <div class="max-w-7xl mx-auto">
                 <!-- Welcome Content Grid -->
-                <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-0">
                   
                     <div class="space-y-6">
                         <div>
@@ -31,28 +31,11 @@
                     <div class="flex justify-center items-center">
                         <img :src="medtech" alt="Laboratory workers" class="max-w-full h-auto w-full" />
                     </div>
-                </div> -->
-                <div class="w-full lg:w-1/2 px-4 sm:pl-10 flex items-center justify-start">
-                    <div class="max-w-lg">
-                        <div class="pl-12">
-                            <h1 class="text-4xl sm:text-5xl font-zalando font-extrabold  text-black leading-tight">
-                                Smart Services
-                            </h1>
-                            <p class="text-4xl sm:text-5xl font-zalando font-bold text-green-500 leading-tight">
-                                Seamless Results.
-                            </p>
-                        </div>
-
-                        <p class="text-gray-700 text-sm leading-relaxed px-12">
-                            You can be part of our growing family
-                        </p>
-                    </div>
                 </div>
+                
 
                 <!-- Right Image - Full Height, No Margins -->
-                <div class="hidden lg:flex w-1/2">
-                    <img :src="medtech" alt="Laboratory scientist" class="w-full h-full object-cover" />
-                </div>
+                
             </div>
         </section>
 

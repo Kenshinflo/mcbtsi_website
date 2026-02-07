@@ -10,7 +10,7 @@
                     <!-- Left Content -->
                     <div class="">
                         <div>
-                            <h1 class="text-5xl text-wrap md:text-nowrap sm:text-6xl font-rale font-extrabold text-black/80 leading-10 tracking-tight">
+                            <h1 class="text-5xl text-wrap md:text-nowrap sm:text-6xl font-rale font-semibold text-black/80 leading-10 tracking-tight">
                                 Optimizing Laboratories
                             </h1>
                             <h2 class="text-4xl sm:text-5xl font-extrabold text-green-500 font-zalando leading-tight -tracking-wide mt-2">
@@ -18,11 +18,11 @@
                             </h2>
                         </div>
 
-                        <p class="text-gray-600 text-lg text-balance  leading-tight mt-3 mb-10 max-w-md">
+                        <p class="text-gray-600 text-md text-balance font-rale leading-tight mt-3 mb-8 max-w-lg">
                             Empowering laboratories for better patient care, for better future.
                         </p>
 
-                        <Link href="/service" class="px-7 py-4 mt-14 bg-black text-white font-rale  font-bold text-md tracking-wide hover:bg-green-500  transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
+                        <Link href="/service" class="px-7 py-4 mt-14 bg-green-500 text-white  font-bold text-md tracking-wide hover:bg-black  transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg">
                             Explore our Solutions
                         </Link>
                     </div>
@@ -37,14 +37,14 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     <!-- Video Card 1 -->
                     <div class="group relative bg-linear-to-br from-gray-300 to-gray-200 rounded-xl overflow-hidden aspect-video flex items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300">
-                        <svg class="w-20 h-20 text-black opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
+                        <svg class="w-20 h-20 text-black/80 opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M8 5v14l11-7z" />
                         </svg>
                     </div>
 
                     <!-- Video Card 2 -->
                     <div class="group relative bg-gradient-to-br from-gray-300 to-gray-200 rounded-xl overflow-hidden aspect-video flex items-center justify-center cursor-pointer hover:scale-105 transition-transform duration-300">
-                        <svg class="w-20 h-20 text-black opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
+                        <svg class="w-20 h-20 text-black/80 opacity-70 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M8 5v14l11-7z" />
                         </svg>
                     </div>
@@ -65,7 +65,7 @@
                     <div class="order-1 lg:order-2 space-y-8">
                         <div>
                             <p class="text-blue-500 font-semibold text-sm mb-2">Our Services</p>
-                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black leading-tight tracking-tight">
+                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black/80 leading-tight tracking-tight">
                                 We help laboratories enhance accuracy and productivity.
                             </h2>
                             <p class="text-gray-600 text-sm mt-4">
@@ -75,11 +75,11 @@
 
                         <!-- Service Card -->
                         <div class="bg-blue-50 rounded-2xl p-6 space-y-4">
-                            <h3 class="text-lg font-bold text-black">HCLAB WAM & LIS</h3>
+                            <h3 class="text-lg font-bold text-black/80">HCLAB WAM & LIS</h3>
                             <p class="text-gray-600 text-sm leading-relaxed">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                             </p>
-                            <button class="px-6 py-2 bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-black transition-all duration-300">
+                            <button class="px-6 py-2 bg-black text-white font-semibold text-sm hover:bg-green-500 hover:text-black/80 transition-all duration-300">
                                 Read More
                             </button>
                         </div>
@@ -92,7 +92,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-bold text-black">HCLAB Special Modules</h4>
+                                <h4 class="text-lg font-bold text-black/80">HCLAB Special Modules</h4>
                                 <p class="text-gray-600 text-sm mt-2 leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                 </p>
@@ -110,7 +110,7 @@
                     <!-- Left Content -->
                     <div class="space-y-12">
                         <div>
-                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black leading-tight mb-4">
+                            <h2 class="text-4xl sm:text-4xl font-semibold font-zalando text-black/80 leading-tight mb-4">
                                 We offer 24/7 Technical Support
                             </h2>
                             <p class="text-gray-600 text-sm leading-relaxed">
@@ -127,7 +127,7 @@
                                         <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-bold text-black">IT Support</h3>
+                                <h3 class="text-lg font-bold text-black/80">IT Support</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
@@ -140,7 +140,7 @@
                                         <path d="M12 4a1 1 0 011 1v2h4a2 2 0 012 2v10a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2h4V5a1 1 0 011-1h2z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-lg font-bold text-black">Machine Support</h3>
+                                <h3 class="text-lg font-bold text-black/80">Machine Support</h3>
                                 <p class="text-gray-600 text-sm leading-relaxed">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                                 </p>
@@ -174,19 +174,19 @@
                     <!-- Services Provided Card -->
                     <div class="bg-white rounded-2xl p-6 border-l-4 border-green-500 space-y-4">
                         <p class="text-gray-600 font-semibold text-sm">Services Provided:</p>
-                        <p class="text-5xl font-black text-black">1500+</p>
+                        <p class="text-5xl font-black text-black/80">1500+</p>
                     </div>
 
                     <!-- Clients Card -->
                     <div class="bg-white rounded-2xl p-6 border-l-4 border-green-500 space-y-4">
                         <p class="text-gray-600 font-semibold text-sm">Clients:</p>
-                        <p class="text-5xl font-black text-black">20+</p>
+                        <p class="text-5xl font-black text-black/80">20+</p>
                     </div>
 
                     <!-- Branches Card -->
                     <div class="bg-white rounded-2xl p-6 border-l-4 border-green-500 space-y-4">
                         <p class="text-gray-600 font-semibold text-sm">Branches:</p>
-                        <p class="text-5xl font-black text-black">10...</p>
+                        <p class="text-5xl font-black text-black/80">10...</p>
                     </div>
                 </div>
 
@@ -291,7 +291,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-8">
                         <!-- Careers Content -->
                         <div class="space-y-4">
-                            <h3 class="text-2xl sm:text-3xl font-black text-black">Careers</h3>
+                            <h3 class="text-2xl sm:text-3xl font-black text-black/80">Careers</h3>
                             <p class="text-gray-700 text-sm leading-relaxed">
                                 MC Biotechnical Solutions Inc. is dedicated to making laboratories easier and faster by providing innovative solutions and services tailored to meet the needs of modern scientific research.
                             </p>
